@@ -44,8 +44,7 @@ header {
   flex:3;
   display: flex;
   flex-direction: column;
-  
-}
+  }
 
 .header2{
   flex:3;
@@ -65,10 +64,22 @@ header {
   flex: 3;
 }
 
+footer{
+  text-align: center;
+  background-color: #334455;
+  color: white;
+  padding: 10px;
+  margin: 16px 5px;
+  }
+
+  footer a{
+    color: white;
+    padding: 0 10px;
+  }
+
 .motto {
    color:blue;
-   
-}
+  }
 
 .page {
   background-color: #fff;
