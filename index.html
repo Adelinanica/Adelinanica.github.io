@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adelina's CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <section id="intro">
+            <div class="header1">
+        
+                <h1>Nica Adelina Cristina</h1>
+        
+                <img src="picture.jpg" alt="myprofile" width="150px" />
+        
+            </div>
+        
+            <div class="header2">
+                <p class="motto">About me: I'm WebDeveloper </p>
+            </div>
+        
+        </section>
+    
+        <ul id="top-menu-bar">
+            <li><a href="#" onclick="showHomePage()">Home</a></li>
+            <li><a href="#" onclick="showSkillsPage()">Skills</a></li>
+            <li><a href="#"  onclick="showLanguagesPage()">Languages</a></li>
+            <li><a href="#" onclick= "showProjectsPage()">Projects</a></li>
+        </ul>
+    </header>
+    <section id="content">
+        <div id="side-menu">
+            <section>
+                <div class="page">
+                    <form action="">
+                        <div>
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <button>Send Request</button>
+                    </form>
+                        </div>
+            </section>
+          
+            <section class="page">
+                <footer>
+                    <a href="https://www.linkedin.com/in/adelina-cristina-nica-80a902179/" target="_blank">LinkedIn</a>
+            
+                </footer>
+            </section>
+        </div>
+
+        <div id="main">
+
+            <div id="home" class="page">
+                <h2>Home</h2>
+                <p>I follow the Web Developer course at Fast Track It in Cluj-Napoca</p>
+            </div>
+
+            <div id="skills" class="page" style="display: none;">
+                <h2>Skills</h2>
+                <ul>
+                    <li class="favourite-skill">HTML</li>
+                    <li>CSS</li>
+                    <li class="favourite-skill">JS</li>
+                </ul>
+            </div>
+        
+            <div id="languages" class="page" style="display: none;">
+            <h2>Languages</h2>
+            <table border="1px">
+                <tr>
+                    <th>Language</th>
+                    <th>Level</th>
+                </tr>
+                <tr>
+                    <td>Romanian:</td>
+                    <td>C2</td>
+                </tr>
+                <tr>
+                    <td>English:</td>
+                    <td>B2</td>
+                </tr>
+                <tr>
+                    <td> French:</td>
+                    <td>B1</td>
+                </tr>
+            </table>
+            </div>
+
+            <div id="projects" class="page" style="display: none;">
+                <h2>Projects</h2>
+                <p>About my projects, comming soon</p>
+            </div>
+        </div>
+    </section>
+   
+    <script>
+        var name = "Adelina";
+        console.log("salut, bine ai venit " + name + '!');
+        console.log(name + " te rog sa cumperi paine")
+        console.info(4747+7789);
+
+        var m = document.getElementById("motto");
+        m.style.color="blue";
+      
+    </script>
+
+    <script src="functions.js"></script>
+
+</body>
+
+</html>
+
+
