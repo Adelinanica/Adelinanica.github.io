@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
   margin: 0;
   min-height: 100%;
   display: flex;
@@ -12,25 +12,40 @@ body {
 
 header {
   flex: 1;
-  margin:5px;
+  margin: 5px;
 }
 
-#intro{
-  flex:5;
+#header-wraper {
   display: flex;
   flex-direction: row;
   align-items: center;
-  }
+}
 
-.header1{
-  flex:3;
-  display: flex;
-  flex-direction: column;
-  }
+#my-picture {
+  padding: 10px;
+  width: 108px;
+  height: 108px;
+}
+#my-picture img {
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
 
-.header2{
-  flex:3;
-  }
+#header-info {
+  flex: 3;
+  margin-left: 50px;
+}
+
+h1 {
+  margin: 5px 0;
+}
+
+#job-title {
+  color: #334455;
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
 
 #content {
   flex: 5;
@@ -46,22 +61,19 @@ header {
   flex: 3;
 }
 
-footer{
+footer {
   text-align: center;
   background-color: #334455;
   color: white;
   padding: 10px;
   margin: 0px 5px;
-  }
+}
 
-  footer a{
-    color: white;
-    padding: 0 10px;
-  }
-
-.motto {
-   color:blue;
-  }
+footer a {
+  color: white;
+  padding: 0 10px;
+  font-size: 25px;
+}
 
 .page {
   background-color: #fff;
@@ -72,7 +84,7 @@ footer{
   border-radius: 2px;
 }
 
-.page h2{
+.page h2 {
   margin: 0;
 }
 
@@ -102,7 +114,8 @@ td {
 #top-menu-bar a {
   text-decoration: none;
   color: #fff;
-  padding: 0 15px 0 15px;
+  padding: 10px 15px 10px 15px;
+  font-size: 25px;
 }
 
 #top-menu-bar a:hover {
