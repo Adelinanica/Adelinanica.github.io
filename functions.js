@@ -1,48 +1,43 @@
-function showHomePage(){
-    var skills = document.getElementById("skills");
-    skills.style.display="none";
-     var project=document.getElementById("projects");
-    project.style.display="none";
-    var language = document.getElementById("languages");
-    language.style.display="none";
+function hide(id){
+    var el = document.getElementById(id);
+    el.style.display="none";
+}
 
-    var homepage=document.getElementById("home");
-    home.style.display='';
+function show(id){
+    var element=document.getElementById(id);
+    element.style.display='';
+}
+
+
+function showHomePage(){
+    hide("skills");
+    hide("languages");
+    hide("projects");
+
+    show("home");
 }
 
 function showSkillsPage(){
-    var home = document.getElementById("home");
-    home.style.display="none"
-    var language = document.getElementById("languages");
-    language.style.display="none";
-    var project=document.getElementById("projects");
-    project.display="none";
-
-    var page= document.getElementById('skills'); 
-    page.style.display='';
+    hide("home");
+    hide("languages");
+    hide("projects");
+    
+    show("skills");
 }
 
 function showLanguagesPage(){
-   var skills = document.getElementById("skills");
-    skills.style.display="none";
-    var home = document.getElementById("home");
-    home.style.display="none";
-    var project=document.getElementById("projects");
-    project.style.display="none";
+    hide("skills");
+    hide("home");
+    hide("projects");
    
-    var language = document.getElementById("languages");
-    language.style.display = '';
-}
+    show("languages");
+    }
 
 function showProjectsPage(){
-    var skills = document.getElementById("skills");
-    skills.style.display="none";
-    var language = document.getElementById("languages");
-    language.style.display="none";
-    var home = document.getElementById("home");
-    home.style.display="none";
-
-    var project=document.getElementById("projects");
-    project.style.display='';
-}
+    hide("skills");
+    hide("languages");
+    hide("home");
+   
+    show("projects");
+    }
 
