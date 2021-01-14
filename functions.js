@@ -2,9 +2,10 @@ function showSkillsPage(){
 
     var home = document.getElementById("home");
     home.style.display="none"
-
     var language = document.getElementById("languages");
     language.style.display="none";
+    var project=document.getElementById("projects");
+    project.display="none";
 
     var page= document.getElementById('skills'); 
     page.style.display='';
@@ -13,10 +14,8 @@ function showSkillsPage(){
 function showLanguagesPage(){
     var skills = document.getElementById("skills");
     skills.style.display="none";
-
     var home = document.getElementById("home");
     home.style.display="none";
-
     var project=document.getElementById("projects");
     project.style.display="none";
    
@@ -27,8 +26,7 @@ function showLanguagesPage(){
 function showProjectsPage(){
     var language = document.getElementById("languages");
 language.style.display="none";
-
-var home = document.getElementById("home");
+    var home = document.getElementById("home");
 home.style.display="none";
 
     var project=document.getElementById("projects");
