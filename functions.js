@@ -22,3 +22,15 @@ function showPage(pageId) {
   hideAllPages();
   show(pageId);
 }
+
+function listenMenuClick() {
+  document.addEventListener("click", function (e){
+    var link = e.target;
+    if (link.matches("#top-menu-bar a")) {
+      var id = link.innerHTML.toLowerCase();
+    showPage(id);
+    }
+    });
+}
+
+listenMenuClick();
