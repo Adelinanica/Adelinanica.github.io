@@ -13,10 +13,10 @@ function hideAllPages(){
      return page.id;
    });
    
-    //initial ;         condition     ; post execution
-    for( var i = 0; i < pageIds.length; i++) {
-        hide(pageIds[i])     
-        }
+   pageIds.forEach(function (pageId){
+     hide(pageId);
+   });
+   
 }
 
 function showPage(pageId) {
