@@ -8,13 +8,14 @@ function show(id) {
 }
 
 function hideAllPages(){
-    var pages = document.querySelectorAll("#main .page");
-    
+    var pages = Array.from(document.querySelectorAll("#main .page")); 
+   var pageIds = pages.map(function(page){
+     return page.id;
+   });
+   
     //initial ;         condition     ; post execution
-    for( var i = 0; i < pages.length; i++) {
-        var page = pages[i];
-        hide(page.id);  
-        // hide(pages[i].id)     
+    for( var i = 0; i < pageIds.length; i++) {
+        hide(pageIds[i])     
         }
 }
 
