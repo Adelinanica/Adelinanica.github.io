@@ -38,11 +38,16 @@ var allSkills = [
   { name :"CSS", favorite: false, endorsements:5 },
   { name :"JS", favorite: true, endorsements:7 },
  ];
-//TO DO class="favourite-skill"
 
-var allSkillsHtml = allSkills.map(function (skill){
-    return  `<li>${skill.name} <span> (${skill.endorsements})</span></li>`;
+
+function showSkills (skills){
+  var allSkillsHtml = skills.map(function (skill){
+    //TO DO class="favourite-skill"
+  return  `<li>${skill.name} <span> (${skill.endorsements})</span></li>`;
 });
 
 var skillsEl = document.querySelector("#skills ul");
 skillsEl.innerHTML= allSkillsHtml.join("");
+};
+
+showSkills(allSkills);
