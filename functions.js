@@ -30,3 +30,12 @@ function listenMenuClick() {
 }
 
 listenMenuClick();
+
+var allSkills = `
+    <li class="favourite-skill">HTML</li>
+    <li>CSS</li>
+    <li class="favourite-skill">JS</li>
+ `;
+
+var skillsEl = document.querySelector("#skills ul");
+skillsEl.innerHTML= allSkills;
