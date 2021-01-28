@@ -34,15 +34,14 @@ listenMenuClick();
 showPage("skills")
 
 var allSkills = [
-    `HTML`,
-    `CSS`,
-    `JS`,
-  ];
+  { name :"HTML", favorite: true, endorsements:5 },
+  { name :"CSS", favorite: false, endorsements:5 },
+  { name :"JS", favorite: true, endorsements:5 },
+ ];
 //TO DO class="favourite-skill"
 
 var allSkillsHtml = allSkills.map(function (skill){
-  //return `<li>`+ skill +`</li>`;
-    return  `<li>${skill}</li>`;
+    return  `<li>${skill.name}</li>`;
 });
 
 var skillsEl = document.querySelector("#skills ul");
